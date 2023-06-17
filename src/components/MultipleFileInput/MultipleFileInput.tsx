@@ -23,7 +23,7 @@ const MultipleFileInput: React.FC<IMultipleFileInput> = ({
   const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i; // фильтр на картинки
+  const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.svg)$/i; // фильтр на картинки
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
