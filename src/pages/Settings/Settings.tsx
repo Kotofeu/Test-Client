@@ -62,7 +62,7 @@ const Settings = observer(() => {
                         <div className={classes.settings_imageBox}>
                             <label className={classes.settings_imageInput}>
                                 Загрузите ваше новое фото
-                                <input type="file" accept=".jpg,.jpeg,.png" onChange={(event) => setUserFile(event.target.file)} style={{ display: 'none' }} />
+                                <input type="file" accept=".jpg,.jpeg,.png" onChange={(event) => setUserFile(event.target.files ? event.target.files[0] : null)} style={{ display: 'none' }} />
                             </label>
                             <div className={classes.settings_imageName}>{userFile?.name}</div>
                         </div>
