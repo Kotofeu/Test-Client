@@ -20,7 +20,6 @@ const Settings = observer(() => {
     const [userPhone, setUserPhone] = useState<string>('');
     const onRatingFormSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log(userFile)
         if (id) {
             const formData = new FormData()
             if (userName) {
@@ -53,7 +52,7 @@ const Settings = observer(() => {
         <Container>
 
             <div className={classes.settings}>
-                <UserHeader/>
+                <UserHeader />
                 <form className={classes.settings_form} onSubmit={onRatingFormSubmit}>
                     <div className={classes.settings_fieldsInputs}>
                         <Input className={classes.settings_input} placeholder={"Введите ваше имя"} value={userName} onChange={(event) => setUserName(event.target.value)} type="text" />
@@ -62,12 +61,11 @@ const Settings = observer(() => {
                         <Input className={classes.settings_input} placeholder={"Введите ваш новый пароль"} value={userPassword} onChange={(event) => setUserPassword(event.target.value)} type="password" />
                         <div className={classes.settings_imageBox}>
                             <label className={classes.settings_imageInput}>
-                                Загрузите ваше новое фото
-                                <input type="file" accept=".jpg,.jpeg,.png" onChange={(event) => setUserFile(event.target.files ? event.target.files[0] : null)} style={{ display: 'none' }} />
+                            Загрузите ваше новое фото
+                                <input type="file" multiple accept=".jpg,.jpeg,.png,.svg" onChange={(event) => setUserFile(event.target.files ? event.target.files[0] : null)} style={{ display: 'none' }} />
                             </label>
                             <div className={classes.settings_imageName}>{userFile?.name}</div>
                         </div>
-
                     </div>
                     <button className={classes.settings_formButton} type="submit">Обновить данные</button>
                 </form>
