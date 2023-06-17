@@ -10,7 +10,7 @@ interface IServerImage  extends AllHTMLAttributes<HTMLImageElement> {
 }
 const ServerImage: FC<IServerImage> = memo((props) => {
     const { src, className, alt, style, altSrc } = props
-    const serverSrc = src ? `${process.env.REACT_APP_API_URL}${src}` : altSrc
+    const serverSrc = src ? `${process.env.REACT_APP_API_URL}/${src}` : altSrc
     const imgBroke = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.src = noPhoto
     }
