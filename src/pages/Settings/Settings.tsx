@@ -20,6 +20,7 @@ const Settings = observer(() => {
     const [userPhone, setUserPhone] = useState<string>('');
     const onRatingFormSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        console.log(setUserFile)
         if (id) {
             const formData = new FormData()
             if (userName) {
