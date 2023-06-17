@@ -225,7 +225,7 @@ const Admin = observer(() => {
                             <div className={classes.settings_imageBox}>
                                 <label className={classes.settings_imageInput}>
                                     Загрузите изображение
-                                    <input type="file" multiple accept=".jpg,.jpeg,.png" onChange={(event) => setCategoryImage(event.target.files ? event.target.files[0] : null)} style={{ display: 'none' }} />
+                                    <input type="file" multiple accept=".jpg,.jpeg,.png,.svg" onChange={(event) => setCategoryImage(event.target.files ? event.target.files[0] : null)} style={{ display: 'none' }} />
                                 </label>
                                 <div className={classes.settings_imageName}>{categoryImage?.name}</div>
                             </div>
