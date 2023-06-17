@@ -1,0 +1,54 @@
+@import '../../../../styles/settings.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    z-index: 999;
+}
+
+.header_inner {
+    display: flex;
+    padding: 15px 0px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 50px;
+
+}
+
+.header_logo {
+    display: block;
+}
+
+.header_logoImage {
+    object-fit: contain;
+    max-height: 50px;
+    max-width: 40px;
+}
+
+
+.header_navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.header_linkButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.header_link{
+
+}
+
+.header_user{
+    min-width: 42px;
+}

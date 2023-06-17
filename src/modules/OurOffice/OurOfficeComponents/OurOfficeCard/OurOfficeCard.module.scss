@@ -1,0 +1,96 @@
+@import '../../../../styles/settings.scss';
+
+.officeCard_card {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    height: 100%;
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+
+        & .officeCard_desc___inline {
+            flex-direction: row;
+        }
+    }
+}
+
+.officeCard_desc {
+    width: 100%;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    height: 100%;
+    font-weight: 500;
+    font-size: 16px;
+
+    &___inline {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+
+    }
+}
+
+.officeCard_descContainer {
+    width: 100%;
+}
+
+.officeCard_title {
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.officeCard_map {
+    width: 100%;
+    box-shadow: 2px 3px 8px 3px rgba(0, 0, 0, 0.13);
+}
+
+.officeCard_schedule {
+    & span {
+        padding: 0;
+        margin: 0;
+        display: block;
+        line-height: 1.5em;
+    }
+}
+
+
+.officeCard_address {
+    padding-top: 10px;
+    line-height: 1.6em;
+}
+
+.officeCard_contact {
+    font-size: 18px;
+}
+
+.officeCard_telNumbers {
+    padding: 10px 0;
+    border-top: 1px solid rgba($text-color, .3);
+    border-bottom: 1px solid rgba($text-color, .3);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 13px 0;
+}
+
+.officeCard_imageBox {
+    width: 100%;
+    height: 600px;
+}
+
+.officeCard_image {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    // min-height: 500px;
+
+}

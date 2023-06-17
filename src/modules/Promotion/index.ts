@@ -1,0 +1,1 @@
+export {PromotionSection} from './PromotionComponents/PromotionSection/PromotionSection'

@@ -1,0 +1,48 @@
+@import '../../../../styles/settings.scss';
+.offerHeader {}
+
+.offerHeader_inner {
+    display: flex;
+    gap: 50px;
+}
+
+.offerHeader_image {
+    height: 100%;
+    object-fit: cover;
+    min-width: 450px;
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px 3px rgba(0, 0, 0, 0.13);
+}
+
+.offerHeader_offerAbout {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.offerHeader_desc {
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+}
+.offerHeader_controller{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.offerHeader_deleteButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: $primary-color;
+}
+.offerHeader_amount {}
+
+.offerHeader_title {
+    padding-top: 25px;
+}

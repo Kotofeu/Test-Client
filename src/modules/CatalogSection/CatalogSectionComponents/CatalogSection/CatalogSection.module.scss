@@ -1,0 +1,28 @@
+@import '../../../../styles/settings.scss';
+.catalogSection{
+    flex-grow: 1;
+    padding-top: 30px;
+    
+}
+.catalogSection_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.catalogSection_goodCard{
+
+}
+.catalogSection_header{
+    padding: 15px 18px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    margin-bottom: 20px;
+}
+.catalogSection_pagination{
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+}

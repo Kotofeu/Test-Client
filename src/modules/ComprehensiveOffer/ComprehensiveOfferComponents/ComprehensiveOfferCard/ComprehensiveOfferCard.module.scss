@@ -1,0 +1,23 @@
+@import '../../../../styles/settings.scss';
+.offer{
+    background-color: $primary-color;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100px;
+}
+.offer_title{
+    position: relative;
+    padding: 15px 20px;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 18px;
+}
+.offer_image{
+    width: 90px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 53% 0  0 40%   
+}

@@ -1,0 +1,49 @@
+@import '../../styles/settings.scss';
+
+.title {
+  font-weight: 700;
+  position: relative;
+  line-height: 1.1em;
+  color: $title-color;
+  font-size: 24px;
+}
+
+.title___posCetner {
+  text-align: center;
+
+}
+
+.title___sectionTitle {
+  font-size: 34px;
+
+}
+
+@media (min-width: 479.98px) {
+  .title___sectionTitle {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .title___sectionTitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .title___sectionTitle {
+    font-size: 32px;
+  }
+}
+
+@keyframes animate-down {
+  0% {
+    transform: translateY(-100%);
+
+  }
+
+  100% {
+    transform: translateY(0);
+
+  }
+}

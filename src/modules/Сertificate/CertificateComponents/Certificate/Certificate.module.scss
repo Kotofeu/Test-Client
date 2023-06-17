@@ -1,0 +1,63 @@
+@import '../../../../styles/settings.scss';
+.certificate {}
+
+.certificate_title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.certificate_subtitle {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.certificate_list {
+    margin-top: 45px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.certificate_image {
+    display: block;
+    object-fit: contain;
+    height: 400px;
+    width: 100%;
+    max-width: 30%;
+	
+    &:nth-child(1),
+    &:nth-child(3) {
+        position: relative;
+
+    }
+
+    &:nth-child(1) {
+      //  left: 40px;
+
+    }
+
+    &:nth-child(2) {
+        position: absolute;
+        z-index: 1;
+        transform: scale(1.1, 1.1);
+        box-shadow: 2px 3px 8px 3px rgba(0, 0, 0, 0.13);
+        max-width: none;
+        width: auto;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:nth-child(3) {
+      //  right: 40px;
+    }
+}

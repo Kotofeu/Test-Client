@@ -1,0 +1,10 @@
+@import '../../../../styles/settings.scss';
+.categories{
+    min-width: 250px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    position: relative;
+    min-height: 300px;
+}

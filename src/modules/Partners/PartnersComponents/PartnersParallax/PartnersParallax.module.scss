@@ -1,0 +1,11 @@
+.parallax_inner{
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+}
+
+.partnerImage{
+    object-fit: contain;
+    padding: 0 10px;
+    max-height: 150px;
+}

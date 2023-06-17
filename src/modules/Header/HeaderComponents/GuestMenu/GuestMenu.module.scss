@@ -1,0 +1,50 @@
+@import '../../../../styles/settings.scss';
+
+.guestMenu {
+    background-color: $primary-color;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 8px 3px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform-origin: calc(100% - 20px) 20px;
+
+}
+.guestMenu_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: flex-start;
+    transform-origin: top right;
+    min-height: 50px;
+    margin-right: 55px;
+}
+.guestMenu_link {
+    color: $title-color;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color .1s ease-in-out;
+    white-space: nowrap;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.guestMenu_button {
+    padding: 3px 0;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    color: $text-color;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}

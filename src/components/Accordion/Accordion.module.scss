@@ -1,0 +1,29 @@
+.accordion {}
+
+.accordion_title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.accordion_openButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    transition: transform .3s ease-in-out;
+    will-change: transform;
+    z-index: 2;
+    &___active {
+        transform: rotate(180deg);
+
+    }
+}
+
+.accordion_typeList {
+    overflow: hidden;
+
+}

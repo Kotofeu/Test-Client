@@ -1,0 +1,120 @@
+@import '../../styles/settings.scss';
+
+.rangeSlider {
+    position: relative;
+}
+
+.rangeSlider_inputValues {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.rangeSlider_input {
+    padding: 6px 10px;
+    font-weight: 500;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    width: 75px;
+    background-color: $primary-color;
+    &___min {
+        text-align: start;
+    }
+
+    &___max {
+        text-align: end;
+
+    }
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider_track,
+.slider_range,
+.slider_leftValue,
+.slider_rightValue {
+    position: absolute;
+}
+
+.slider_track,
+.slider_range {
+    border-radius: 3px;
+    height: 5px;
+}
+
+.slider_track {
+    background-color: $secondary-color;
+    width: 100%;
+    z-index: 1;
+}
+
+.slider_range {
+    background-color: $text-color;
+    z-index: 2;
+}
+
+.slider_leftValue,
+.slider_rightValue {
+    color: #dee2e6;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    outline: none;
+}
+
+.thumb___zindex3 {
+    z-index: 3;
+}
+
+.thumb___zindex4 {
+    z-index: 4;
+}
+
+.thumb___zindex5 {
+    z-index: 5;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px $secondary-color;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px $secondary-color;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+}

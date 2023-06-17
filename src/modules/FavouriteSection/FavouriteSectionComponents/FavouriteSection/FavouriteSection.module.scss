@@ -1,0 +1,9 @@
+.favourite{
+    padding-top: 30px;
+}
+.favourite_goodCard{
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

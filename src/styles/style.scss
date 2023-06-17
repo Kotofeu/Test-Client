@@ -1,0 +1,31 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+
+
+@media (min-width: 575.98px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+}
+
+main {
+  padding-top: 80px;
+  flex-grow: 1;
+  background-color: $neutral-color;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/settings.scss';
+
+.totalAmount {
+
+}
+
+.totalAmount_inner {
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 0px 8px 2px rgba($title-color, 0.2);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.totalAmount_amount {
+
+}
+
+.totalAmount_button {
+    background-color: $secondary-color;
+    color: $title-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/settings.scss';
+
+.rating {
+    padding-top: 30px;
+
+}
+
+.rating_card {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

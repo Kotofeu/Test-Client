@@ -1,0 +1,48 @@
+@import '../../../../styles/settings.scss';
+
+.user {}
+
+.user_openForm {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.user_image {
+    position: relative;
+    z-index: 1;
+    height: 42px;
+    width: 42px;
+    background-color: rgba(#000, .05);
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    border: 2px dashed transparent;
+    transition: border-color .2s ease-in-out;
+    &___active{
+        border-color:  $secondary-color;
+    }
+}
+.user_arrow {
+    position: relative;
+    z-index: 1;
+    margin-left: 3px;
+    object-fit: fill;
+    display: block;
+    height: 8px;
+    width: 14px;
+    transition: transform .2s ease-in-out;
+
+    &___active {
+        transform: rotateZ(180deg);
+    }
+}
+
+
+.user_guestMenu {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}

@@ -1,0 +1,14 @@
+.ourOffice{
+   // padding-top: 10px;
+}
+.ourOffice_title{
+    font-size: 34px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+.ourOffice_card{
+    padding-bottom: 30px;
+    &:last-child{
+        padding-bottom: 0;
+    }
+}

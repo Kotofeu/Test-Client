@@ -1,0 +1,1 @@
+export {GoodSection} from './GoodSectionComponents/GoodSection/GoodSection'

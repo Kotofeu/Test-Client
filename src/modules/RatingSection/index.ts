@@ -1,0 +1,1 @@
+export {RatingSection} from './RatingSectionComponents/RatingSection'

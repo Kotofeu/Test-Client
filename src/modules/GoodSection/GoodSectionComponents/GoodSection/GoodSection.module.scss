@@ -1,0 +1,180 @@
+@import '../../../../styles/settings.scss';
+
+.good{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+.good_inner {
+    width: 100%;
+}
+.good_card{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 10px;
+}
+.good_imageSlider{
+    width: 100%;
+    max-width: 300px;
+}
+.good_imageSlide{
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.good_image{
+    margin: auto;   
+    height: 100%;
+    width: 100%;
+    background-color: $neutral-color;
+
+}
+.good_name{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.good_aside{
+    position: sticky;
+    top: 100px;
+    right: 0;
+    background-color: $primary-color;
+    min-width: 280px;
+    width: 1px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.good_rating{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+    align-items: center;
+}
+.good_brand{
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.good_price{
+    display: flex;
+    gap: 5px;
+}
+
+.good_characteristic{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.characteristic_title{
+    font-size: 18px;
+    color: $text-color;
+    font-weight: 500;
+}
+.characteristic_row{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 6px 0;
+    border-bottom: 1px dotted $text-color;
+
+}
+.characteristic_name{
+    font-weight: 500;
+
+}
+.characteristic_desc{
+    text-align: end;
+    font-weight: 400;
+
+}
+.ratingSection{
+    min-height: auto;
+    margin-top: 20px;
+}
+.ratingSection_title{
+    text-align: center;
+    font-size: 22px;
+
+}
+.ratingSection_empty{
+    margin-top: 13px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.ratingSection_rating{
+
+    margin: 10px 0;
+}
+
+
+.good_writeRating{
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    display: block;
+    color: $title-color;
+    transition: all .14s ease-in-out;
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 8px 0;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    &:hover{
+        border-color: $secondary-color;
+        color: $secondary-color;
+    }
+}
+
+
+.ratingForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+}
+.ratingForm_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ratingForm_input{
+    background-color: $primary-color;
+    padding: 10px;
+    border: 1px solid $text-color;
+    border-radius: 8px;
+}
+.ratingForm_controller{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ratingForm_button{
+    background-color: transparent;
+    border: none;
+    color: $title-color;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .14s ease-in-out;
+    &:hover{
+        color: $secondary-color;
+   
+    }
+}

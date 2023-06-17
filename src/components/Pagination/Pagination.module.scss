@@ -1,0 +1,30 @@
+@import '../../styles/settings.scss';
+.pagination{
+
+}
+
+.pagination_arrowButton{
+    border: none;
+    background-color: transparent;
+    padding: 4px 6px;
+    font-size: 28px;
+    font-weight: 500;
+
+    &___disabled{
+        display: none;
+    }
+}
+
+.pagination_button{
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    box-sizing: content-box;
+    padding: 4px;
+    color: $title-color;
+    font-weight: 500;
+    transition: color .13s ease-in-out;
+    &___disabled{
+        color: $secondary-color;
+    }
+}

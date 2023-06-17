@@ -1,0 +1,13 @@
+@import '../../../../styles/settings.scss';
+.footer_title {
+    font-weight: 600;
+    color: $primary-color;
+
+    &___h4 {
+        font-size: 22px;
+    }
+
+    &___h5 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,110 @@
+@import '../../../../styles/settings.scss';
+
+.authForm {
+    padding: 20px 30px;
+    background-color: $primary-color;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.authForm_inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 17px;
+
+}
+
+.authForm_tabs {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-self: center
+}
+
+.authForm_tabButton {
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+    transition: color .2s ease-in-out;
+
+    &___active {
+        color: $secondary-color;
+    }
+}
+
+.authForm_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.authForm_input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $text-color;
+    height: 30px;
+
+    &___pass {}
+}
+
+.authForm_passwordBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.authForm_showPassBtn {
+    height: 35px;
+    width: 35px;
+    border: none;
+    padding: 0;
+    position: relative;
+    &:hover{
+        border: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%) rotateZ(45deg);
+        height: 1px;
+        background-color: $title-color;
+        opacity: 0;
+        transition: opacity .1s ease-in-out;
+    }
+
+    &___active {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+.authForm_action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.authForm_actionButton{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: $title-color;
+    font-weight: 500;
+}
+.authForm_actionButton___exite{
+    color: $text-color;
+}

@@ -1,0 +1,26 @@
+@import '../../../../styles//settings.scss';
+
+.partners {
+    width: 100%;
+    overflow: hidden;
+}
+
+.partners_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+    padding-top: 7px;
+
+}
+
+.partners_title {
+    padding-bottom: 10px;
+}
+
+.partners_list{
+    width: 100%;
+
+}
+
+

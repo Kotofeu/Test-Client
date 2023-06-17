@@ -1,0 +1,68 @@
+@import '../../../../styles/settings.scss';
+
+.footer {
+    background-color: $title-color;
+    color: $primary-color;
+
+    & a {
+        color: $secondary-color;
+    }
+}
+
+.footer_inner {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 20px;
+
+}
+
+
+
+// contact 
+
+
+.footer_contact {
+    font-style: normal;
+}
+
+.footer_city {
+    //padding: 13px 0;
+    //new 
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_mailBox {
+    margin-top: 10px;
+    //new
+    margin-bottom: 10px;
+}
+.footer_contactLink{
+    font-size: 18px;
+}
+.footer_place {
+    line-height: 1.3em;
+}
+
+// social
+.footer_social {}
+
+
+.footer_socialLinksList {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_subscribe {}
+.footer_copyrighting {
+    background-color: #222;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: 500;
+}

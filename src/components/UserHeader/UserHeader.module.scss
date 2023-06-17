@@ -1,0 +1,66 @@
+@import '../../styles/settings.scss';
+.userHeader {
+    min-height: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 40px;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.userHeader_main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 17px;
+    row-gap: 7px;
+}
+.userHeader_user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.userHeader_userImage {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+.userHeader_empty{
+    margin: auto;
+}
+.userHeader_username {
+    font-size: 20px;
+    font-weight: 600;
+}
+.userHeader_userCreatedAt{
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.userHeader_userRole {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.userHeader_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+
+.userHeader_userContact {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 2px;
+}

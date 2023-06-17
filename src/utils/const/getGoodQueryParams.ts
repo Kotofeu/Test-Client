@@ -1,0 +1,7 @@
+export const BRAND_ID = "brandId"
+export const CATEGORY_ID = "categoryId"
+export const TYPE_ID = "typeId"
+export const MIN_PRICE = "minPrice"
+export const MAX_PRICE = "maxPrice"
+export const NAME = "name"
+export const ORDER_BY = "orderBy"

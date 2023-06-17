@@ -1,0 +1,69 @@
+@import '../../../../styles/settings.scss';
+
+.filterAside {
+    position: sticky;
+    top: 100px;
+    min-width: 250px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 30px;
+    background-color: $primary-color;
+    min-height: calc(100vh - 140px);
+    height: 100%;
+
+}
+
+.filterAside_nameInputBox {
+    position: relative;
+
+    &::after {
+        content: '';
+        opacity: .5;
+        position: absolute;
+        display: block;
+        pointer-events: none;
+        top: 0;
+        right:0;
+        bottom: 0;
+        width: 18px;
+        height: 18px;
+        margin: auto 0;
+        margin-right: 10px;
+        background: url('../../../../assets/icons/other.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+
+    }
+}
+.filterAside_price{
+    margin-top: 15px;
+}
+.filterAside_priceTitle{
+    color: $text-color;
+    font-size: 17px;
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+.filterAside_rangePrice{
+    width: 100%;
+}
+.filterAside_nameInput {
+    width: 100%;
+    border: 1px solid $text-color;
+    border-radius: 10px;
+    padding: 8px 10px;
+    display: block;
+    background-color: $primary-color;
+    padding-right: 33px;
+}
+
+.filterAside_inputRange{
+    padding: 0;
+}
+.filterAside_error {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}

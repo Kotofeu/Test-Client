@@ -1,0 +1,41 @@
+@import '../../styles/settings.scss';
+
+.form {
+    min-height: 25px;
+    height: 1px;
+
+    display: flex;
+}
+
+.form_input {
+    height: 100%;
+    width: 100%;
+}
+
+.form_button {
+    padding: 0;
+    display: block;
+    border: none;
+    height: 100%;
+    background-color: $neutral-color;
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease-in-out;
+        
+}
+
+.form_buttonImage {
+    width: 50px;
+    height: 25px;
+    object-fit: cover;
+    padding: 0 10px;
+}
+
+.form_buttonText {
+    display: flex;
+    padding: 0 10px;
+    height: 100%;
+    background-color: $secondary-color;
+    align-items: center;
+    line-height: 0;
+}

@@ -1,0 +1,17 @@
+.categoryHeader{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.categoryHeader__param{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.categoryHeader__paramName{
+    font-size: 14px;
+}
+.categoryHeader__selector{
+    padding: 2px;
+    border-radius: 3px;
+}

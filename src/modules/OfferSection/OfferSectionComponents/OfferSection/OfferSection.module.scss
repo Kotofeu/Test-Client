@@ -1,0 +1,13 @@
+.offer {
+    padding-top: 30px;
+}
+
+.offer_header {
+
+}
+.offer_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 15px;
+    gap: 15px;
+}

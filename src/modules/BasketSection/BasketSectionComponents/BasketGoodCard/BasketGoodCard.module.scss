@@ -1,0 +1,11 @@
+@import '../../../../styles/settings.scss';
+
+.goodCard {}
+
+
+.goodCard_counter {
+    border: 1px solid $text-color;
+    border-radius: 10px;
+    height: 42.2px;
+    min-width: 90px;
+}

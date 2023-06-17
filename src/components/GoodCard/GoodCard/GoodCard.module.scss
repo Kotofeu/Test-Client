@@ -1,0 +1,178 @@
+@import '../../../styles/settings.scss';
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+
+    &___horizontal {
+        & .card_inner {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        & .card_imageLink {
+            height: 120px;
+            align-self: center;
+            min-width: 150px;
+            width: 150px;
+        }
+
+        & .card_description {
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        & .card_link {
+            height: 100%;
+            padding: 0;
+            width: auto;
+            flex-grow: 1;
+            -webkit-line-clamp: 6;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        & .card_info {
+            min-width: 250px;
+            height: 100%;
+            width: 35%;
+            align-items: normal;
+        }
+
+        & .card_goodStat {
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        & .card_goodStatInfo {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        & .card_buy {
+            width: auto;
+        }
+
+    }
+}
+
+.card_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card_imageLink {
+    width: 100%;
+    height: 150px;
+
+}
+
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+
+.card_link {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    min-height: 82px;
+    padding-top: 7px;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: $title-color;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    transition: color .13s ease-in-out;
+
+    &:hover {
+        color: $secondary-color;
+
+        &::after {
+            opacity: 0;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        transition: opacity .3s ease-in-out;
+        opacity: 1;
+        background: linear-gradient(rgba($primary-color, 0), $primary-color)
+    }
+}
+
+.card_info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_goodStat {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.card_goodStatInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card_brand {
+    height: 40px;
+    width: 80px;
+}
+
+.card_brandImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.card_buy {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}

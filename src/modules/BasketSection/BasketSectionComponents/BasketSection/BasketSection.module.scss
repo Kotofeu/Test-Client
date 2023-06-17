@@ -1,0 +1,19 @@
+.basket{
+    padding-top: 30px;
+
+}
+.basket_goodCard {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.basket_footer {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: auto;
+}
