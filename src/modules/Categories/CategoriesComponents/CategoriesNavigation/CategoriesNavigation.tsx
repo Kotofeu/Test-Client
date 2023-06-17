@@ -34,7 +34,7 @@ export const CategoriesNavigation = observer(() => {
                 ? goodStore.categories.rows.map((category) => (
                   <Category
                     categoryName={category.name}
-                    imageSrc={`${process.env.REACT_APP_API_URL}${category.image}`}
+                    imageSrc={`${process.env.REACT_APP_API_URL}/${category.image}`}
                     id={category.id}
                     key={category.id}
                     types={category.types} />
